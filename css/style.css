@@ -7,13 +7,9 @@
   display: grid;
 }*/
 
-img {
+/*img {
   padding: 10px;
-}
-
-img .casestudy {
-  justify-content: center;
-}
+}*/
 
 /*@media (max-width: 40rem) {
   .grid {
@@ -78,6 +74,7 @@ html {
 .portrait {
   grid-column: (3 / span 2);
   grid-row: 3;
+  width: 100px;
 }
 
 /***typography***/
