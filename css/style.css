@@ -2,18 +2,10 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   background-color: #ffffff;
   display: grid;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-evenly;
-  align-content: stretch;
-}
+}*/
 
 img {
   padding: 10px;
@@ -23,76 +15,69 @@ img .casestudy {
   justify-content: center;
 }
 
-.portrait {
-  grid-column: (2 / span 2);
-  object-fit: contain;
-  display: grid;
+/*@media (max-width: 40rem) {
+  .grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 95%;
+  }*/
+
+html {
+  font-size: 10px;
 }
-
-/* GRID OF FOUR */
-
-.span_4_of_4 {
-	width: 100%;
-}
-
-.span_3_of_4 {
-	width: 74.6%;
-}
-
-.span_2_of_4 {
-	width: 49.2%;
-}
-
-.span_1_of_4 {
-	width: 23.8%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_4_of_4 {
-		width: 100%;
-	}
-	.span_3_of_4 {
-		width: 100%;
-	}
-	.span_2_of_4 {
-		width: 100%;
-	}
-	.span_1_of_4 {
-		width: 100%;
-	}
-}
-
 .grid {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  margin: 2rem;
 }
 
-.yellow_box {
+.yellow_box_left {
   background-color: #B2941A8C;
   color: #2C443D !important;
   text-align: center;
   padding: 20px;
-  margin: 20px;
-  grid-column: (2 / span 2);
-  display: grid;
+  grid-column: (1 / span 2);
+  grid-row: 3;
   justify-content: center;
 }
 
-.blue_box {
+.yellow_box_right {
+  background-color: #B2941A8C;
+  color: #2C443D !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: (3 / span 2);
+  grid-row: 2;
+  justify-content: center;
+}
+
+.blue_box_left {
   background-color: #2C443D;
-  margin: 20px;
   color: #C6F2E5 !important;
   text-align: center;
   padding: 20px;
-  grid-column: (2 / span 2);
-  display: grid;
+  grid-column: (1 / span 2);
+  grid-row: 2;
+  justify-content: center;
+}
+
+.blue_box_right {
+  background-color: #2C443D;
+  color: #C6F2E5 !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: (3 / span 2);
+  grid-row: 2;
   justify-content: center;
 }
 
 .portrait {
-  margin: 20px;
+  grid-column: (3 / span 2);
+  grid-row: 3;
 }
 
 /***typography***/
@@ -135,19 +120,15 @@ p {
 /***structure***/
 header {
   background: url("../images/paint_bw.jpg") 0 0 no-repeat fixed;
-  grid-column: 1 / span 4;
+  grid-column: (1 / span 4);
   grid-row: 1;
   text-align: center;
-  margin: 20px 20px 10px 20px;
-  height: 100%;
-  width: auto;
-  display: grid;
   z-index: 1;
 }
 
 .overlay {
   background-color: #2C443DBF;
-  grid-column: 1 / span 4;
+  grid-column: (1 / span 4);
   grid-row: 1;
   height: 100%;
   z-index: 3;
@@ -193,11 +174,9 @@ hr {
 
 footer {
   background-color: #B2941A;
-  grid-column: 1 / span 4;
+  grid-column: (1 / span 4);
   grid-row: 4;
-  margin: 20px;
   padding: 20px;
-  display: flex;
 }
 
 button{
@@ -220,7 +199,7 @@ button a:link {
   text-transform: uppercase;
 }
 
-.reverse_button {
+button .reverse {
   background: #ffffff;
   border: none;
   font-family: Raleway-Regular;
@@ -230,11 +209,10 @@ button a:link {
   text-transform: uppercase;
   width: 210px;
   height: 40px;
-  text-align: center;
   padding: 12.5px;
 }
 
-.reverse_button a:link {
+button .reverse a:link {
   color: #2C443D;
   font_family: Raleway-Regular;
   font-size: 14px;
@@ -250,4 +228,3 @@ li {
   line-height: normal;
   text-align: left;
 }
-/***icons***/
