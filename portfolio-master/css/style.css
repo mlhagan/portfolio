@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: 2rem;
+}
+
+.yellow_box_left {
+  background-color: #B2941A8C;
+  color: #2C443D !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: 1 / span 1;
+  grid-row: 3;
+  justify-content: center;
+}
+
+.yellow_box_right {
+  background-color: #B2941A8C;
+  color: #2C443D !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: 2 / span 1;
+  grid-row: 2;
+  justify-content: center;
+}
+
+.blue_box_left {
+  background-color: #2C443D;
+  color: #C6F2E5 !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: 1 / span 1;
+  grid-row: 2;
+  justify-content: center;
+}
+
+.blue_box_right {
+  background-color: #2C443D;
+  color: #C6F2E5 !important;
+  text-align: center;
+  padding: 20px;
+  grid-column: 2 / span 1;
+  grid-row: 2;
+  justify-content: center;
+}
+
+.portrait img {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  width: 100%;
+}
+
+/***typography***/
+
+.herotext {
+  text-align: center;
+  padding-top: 120px;
+  z-index: 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Raleway-Regular;
+  font-size: 32px;
+  letter-spacing: 0.8px;
+}
+
+h2 {
+  color: #2C443D;
+  font-family: Raleway-Medium;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: Raleway-Light;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #000000;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+
+/***structure***/
+header {
+  background: linear-gradient(#2C443DBF, #2C443DBF), url("../images/paint_bw.jpg") 0 0 no-repeat fixed;
+  grid-column: 1 / span 2;
+  text-align: center;
+  z-index: 1;
+}
+
+header .logo {
+  padding: 10px;
+  align-items: left;
+}
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-family: Raleway-Regular;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  list-style-type: none;
+  float: right;
+  padding-right: 20px;
+}
+
+nav a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #B2941A;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: #B2941A;
+  text-decoration: none;
+}
+
+hr {
+  border: 2px solid #B56974;
+  border-radius: 5px;
+  width: 300px;
+}
+
+footer {
+  background-color: #B2941A;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  padding: 20px;
+}
+
+button{
+  background: #2C443D;
+  border: none;
+  font-family: Raleway-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  width: 210px;
+  height: 40px;
+}
+
+button a:link {
+  color: #FFFFFF;
+  font-family: Raleway-Regular;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+button .reverse {
+  background: #ffffff;
+  border: none;
+  font-family: Raleway-Regular;
+  font-size: 14px;
+  color: #2C443D;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  width: 210px;
+  height: 40px;
+  padding: 12.5px;
+}
+
+button .reverse a:link {
+  color: #ffffff;
+  font-family: Raleway-Regular;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+li {
+  color: #000000;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: normal;
+  text-align: left;
+}
